@@ -5,7 +5,7 @@ class ColorPalette extends StatelessWidget {
 
   const ColorPalette({Key? key, required this.onColorSelected}) : super(key: key);
 
-  final List<Color> colors = [
+  static const List<Color> colors = [
     Colors.black,
     Colors.red,
     Colors.green,
