@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ui/pages/home_page.dart';
 import 'ui/pages/drawing_page.dart';
 import 'ui/pages/settings_page.dart';
 
