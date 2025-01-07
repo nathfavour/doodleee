@@ -10,9 +10,9 @@ class DrawingEngine {
     painter = DrawingPainter(shapes);
   }
 
-  void addPoint(Offset point) {
+  void addPoint(Offset point, Color color) {
     if (_currentShape == null) {
-      _currentShape = Shape(points: [point], color: Colors.black);
+      _currentShape = Shape(points: [point], color: color);
       shapes.add(_currentShape!);
     } else {
       _currentShape!.points.add(point);
