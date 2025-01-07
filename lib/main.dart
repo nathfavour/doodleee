@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomePage(),
+        '/': (context) => const HomePage(title: 'Doodleee Home Page'),
         '/drawing': (context) => const DrawingPage(),
         '/settings': (context) => const SettingsPage(),
       },
