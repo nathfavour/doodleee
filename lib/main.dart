@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'ui/pages/home_page.dart';
+import 'ui/pages/drawing_page.dart';
+import 'ui/pages/settings_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +34,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MyHomePage(title: 'Doodleee Home Page'),
+        '/drawing': (context) => const DrawingPage(),
+        '/settings': (context) => const SettingsPage(),
+      },
     );
   }
 }
